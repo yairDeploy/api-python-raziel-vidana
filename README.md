@@ -70,7 +70,6 @@ docker-compose exec web python manage.py createsuperuser
 - **Swagger**: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
 - **Redoc**: [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
 
-
 ---
 
 ## Endpoints principales
@@ -78,8 +77,14 @@ docker-compose exec web python manage.py createsuperuser
 - `/api/register/` — Registro de usuarios (POST)
 - `/api/token/` — Obtener access/refresh token JWT (POST)
 - `/api/token/refresh/` — Refrescar access token JWT (POST)
-- `/api/users/` — Listado y administración de usuarios (autenticación requerida)
-- Otros endpoints según los modelos definidos
+
+### Usuarios
+- `/api/users/` — Listado de usuarios (GET), Crear usuario (POST)
+- `/api/users/{id}/` — Consultar usuario (GET), Actualizar usuario (PUT/PATCH), Eliminar usuario (DELETE)
+
+### Productos
+- `/api/products/` — Listado de productos (GET), Crear producto (POST)
+- `/api/products/{id}/` — Consultar producto (GET), Actualizar producto (PUT/PATCH), Eliminar producto (DELETE)
 
 ---
 
@@ -87,7 +92,6 @@ docker-compose exec web python manage.py createsuperuser
 
 - La zona horaria está configurada como `America/Mexico_City`.
 - El idioma principal es español mexicano (`es-mx`).
-
 
 ---
 
