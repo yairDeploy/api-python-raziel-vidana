@@ -51,7 +51,6 @@ git clone https://github.com/yairDeploy/api-python-raziel-vidana
 cd api-python-raziel-vidana
 ```
 
-
 ### 2. **Agregar permisos de ejecución al script inicial**
 ```bash
 chmod +x entrypoint.sh
@@ -62,11 +61,39 @@ chmod +x entrypoint.sh
 docker-compose up --build
 ```
 
-
 ### 4. **Acceso a los servicios**
 - **API Django**: [http://localhost:8000/api/](http://localhost:8000/api/)
 - **Swagger**: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
 - **Redoc**: [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
+
+---
+
+## Demo en producción
+
+Puedes probar la API desplegada en AWS usando la siguiente URL base:
+
+- **Demo URL:** [http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/api](http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/api)
+
+Para documentación y pruebas interactivas:
+
+- **Swagger (demo):** [http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/swagger/](http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/swagger/)
+- **Redoc (demo):** [http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/redoc/](http://ec2-18-217-9-246.us-east-2.compute.amazonaws.com/redoc/)
+
+---
+
+## Probar los endpoints automáticamente
+
+Hay un script de ejemplo llamado `flow.py` para probar los endpoints principales.
+
+Primero, instala la dependencia necesaria:
+```bash
+pip install requests
+```
+
+Luego ejecuta el script:
+```bash
+python flow.py
+```
 
 ---
 
