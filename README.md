@@ -120,11 +120,9 @@ python flow.py
 
 ---
 
-## Seguridad
+## Historial de commits
 
-- Nunca subas el `.env` a un repositorio público.
-- Cambia el `SECRET_KEY` y las contraseñas por valores seguros antes de producción.
-- En producción, el valor de `DEBUG` debe ser `False`.
+Consulta el historial estructurado de commits en el archivo [`historico_commits.txt`](./historico_commits.txt).
 
 ---
 

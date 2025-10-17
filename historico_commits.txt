@@ -1,0 +1,149 @@
+commit aa629d831d05597d64b753736176adedca5e167f (HEAD -> master, origin/master)
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:33:05 2025 -0600
+
+    Actualización de readme
+
+commit 139bb2231a07cafba618985a58f0a307bdd302df
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:26:53 2025 -0600
+
+    Agregar flujo de pruebas para productos y usuarios en flow.py
+
+commit 548daa4a50e12fdbe8725791e6c18fd43e9f3f17
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:16:21 2025 -0600
+
+    Refactor: simplificar la definición de campos en UsuarioSerializer
+
+commit 3441d8b6ecead32fc2d16f61f3d48063acb789d3
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:08:09 2025 -0600
+
+    Actualizar ALLOWED_HOSTS en .env para corregir la dirección de la instancia EC2
+
+commit 1bfcd47cb264cbc44fb69fb19b8c4ef84992f8bf
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:04:51 2025 -0600
+
+    Agregación de pruebas unitarias para los modelos, serializadores y vistas de Usuario y Producto
+
+commit e61e6b06139f3ae281179fdd65244865a5df6a4a
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:04:02 2025 -0600
+
+    Refactor: actualizar serializadores Producto y Usuario para mejorar validaciones y estructura de campos
+
+commit 6387a6562da085de446549ed1168f4e5bda31f92
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 11:03:33 2025 -0600
+
+    Agregar método __str__ en modelos Producto y Usuario para mejorar la representación de instancias
+
+commit bc81ee416c4a53effeeab06e6d69ae2c20db4029
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 00:48:30 2025 -0600
+
+    Agregar configuración APPEND_SLASH en settings.py para controlar el comportamiento de las URLs
+
+commit f54123cc92c96a58f465005ccf080cf1d3fc8c50
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 00:37:46 2025 -0600
+
+    Agregar archivo init-user.sql y montar en docker-compose.yml para inicializar usuario en MySQL
+
+commit 78261e7b6bb3ce93ab6f5714f69057875256b07b
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 00:24:39 2025 -0600
+
+    Mapeo de puertos en docker-compose.yml, web->80
+
+commit a8ebb33eb40a073a84a04854624edec4c247d55e
+Author: yairwork <yrvidana@ai27.com>
+Date:   Fri Oct 17 00:09:13 2025 -0600
+
+    Refactor: usar entrypoint.sh para migraciones y arranque del server; actualizar docker-compose.yml
+
+commit d6054bfe6a78766e67c22c29214476c9744bec29
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:57:58 2025 -0600
+
+    Actualización de la documentación en README.md para incluir nuevos endpoints de usuarios y productos
+
+commit c75c35d425f0eedef88a9cab83a6ba9d8509cc1b
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:49:03 2025 -0600
+
+    Agregación del archivo README.md con descripción de la API, decisiones técnicas, instalación, uso y seguridad.
+
+commit b6614b678f20cb970e34d76c171ee564af7a598f
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:36:10 2025 -0600
+
+    Agregación de archivos Dockerfile y docker-compose.yml para configurar el entorno de desarrollo con MySQL y Django.
+
+commit 02af212da4f642c366d7e9c80346bbeb063c3264
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:34:33 2025 -0600
+
+    Actualización de la configuración de la base de datos a MySQL en .env y settings.py, y adición de mysqlclient a requirements.txt
+
+commit e10fbe62e327ce0f290eec325ca75d74746c23bd
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:15:15 2025 -0600
+
+    Agregación del archivo .env para la configuración de variables de entorno y actualización de settings.py para utilizar estas variables.
+
+commit 500137c2575a1a39fb3ccf83d0cdc5978f004975
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:14:04 2025 -0600
+
+    Agregación de configuración para JWT
+
+commit be048a43b798e822dc3e6413ee43c7a523f2b8a4
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:10:11 2025 -0600
+
+    Agregación de la configuración de URLs para la API, incluyendo endpoints para usuarios, productos y autenticación.
+
+commit 3d44b2f9c5ca6ac85b1e401142ec2d76949b2aba
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:09:43 2025 -0600
+
+    Agregación del serializer de registro y viewset correspondiente para el endpoint de register
+
+commit a8182ef197245c7668cdd21b1dd85a75069d5900
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:08:49 2025 -0600
+
+    Agregación de viewsets para los modelos Producto y Usuario
+
+commit de22de6af72686381d2ffbd9602dea211cb28acf
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 23:07:40 2025 -0600
+
+    Registro de modelos Usuario y Producto en el panel de administración
+
+commit 70cb502008500a75f52a2a0521c394f690db03cf
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 22:21:28 2025 -0600
+
+    Agregación de serializers para Usuario y Producto
+
+commit d3b07e518fc497d2496b310d8d17444ef8c7ffa5
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 22:17:06 2025 -0600
+
+    Agregación de modelos Usuario y Producto
+
+commit b21844721e935f003025b0410b89dde06eb707cf
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 22:08:17 2025 -0600
+
+    Agregación de app principal
+
+commit b73b891dabba9230938b7fdb1577db7336138ff9
+Author: yairwork <yrvidana@ai27.com>
+Date:   Thu Oct 16 22:06:06 2025 -0600
+
+    Proyecto iniciado de django con dependencias básicas
