@@ -8,10 +8,7 @@ class UsuarioSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Usuario
-        fields = [
-            'id', 'username', 'nombre', 'apellido', 'edad', 'activo',
-            'created', 'last_update'
-        ]
+        fields = ['id', 'username', 'nombre', 'apellido', 'edad', 'activo', 'created', 'last_update']
         read_only_fields = ['id', 'created', 'last_update']
 
     def validate_edad(self, value):
