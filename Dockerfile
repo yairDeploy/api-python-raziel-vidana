@@ -16,5 +16,7 @@ COPY . .
 # Expone el puerto donde correrá Django
 EXPOSE 8000
 
-# Comando por defecto para correr el servidor
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]

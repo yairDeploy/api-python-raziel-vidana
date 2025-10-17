@@ -51,19 +51,17 @@ git clone https://github.com/yairDeploy/api-python-raziel-vidana
 cd api-python-raziel-vidana
 ```
 
-### 2. **Levantar los servicios**
+
+### 2. **Agregar permisos de ejecución al script inicial**
+```bash
+chmod +x entrypoint.sh
+```
+
+### 3. **Levantar los servicios**
 ```bash
 docker-compose up --build
 ```
 
-### 3. **Aplicar migraciones**
-```bash
-docker-compose exec web python manage.py migrate
-```
-*(Opcional: crear superusuario)*
-```bash
-docker-compose exec web python manage.py createsuperuser
-```
 
 ### 4. **Acceso a los servicios**
 - **API Django**: [http://localhost:8000/api/](http://localhost:8000/api/)
